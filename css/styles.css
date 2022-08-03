@@ -159,7 +159,8 @@ button {
 	letter-spacing: 0.02em;
 	color: var(--plus-color);
 
-	transition:color var(--transition-duration), var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 
 
 }
@@ -169,20 +170,23 @@ button {
 .contact-phone:hover,
 .contact-phone:focus {
 	color: var(--accent-color);
-	animation:color var(--animation-timing-function),var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
 }
 
 .smartphone,
 .envelope{
 	fill:currentColor;
-	transition: fill var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 .envelope:hover,
 .envelope:focus,
 .smartphone:hover,
 .smartphone:focus{
 	fill:currentColor;
-	animation:fill var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 }
 
 
@@ -221,14 +225,16 @@ button {
 	line-height: var(--main-line-height);
 	letter-spacing: 0.02em;
 	color: var(--second-color);
-	transition:color var(--transition-duration),var(--transition-function);
+	transition-duration:  var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 
 }
 
 .menu-link:hover,
 .menu-link:focus {
 	color: var(--accent-color);
-	animation:color var(--animation-duration),var(--animation-timing-function);
+	animation-duration:  var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 	
 }
 .curent::after{
@@ -237,7 +243,7 @@ button {
 	display: block;
 	content: '';
 	left: 0;
-	bottom: 0;
+	bottom:0;
 	width: 100%;
 	height: 4px;
 	border-radius: 2px;
@@ -299,12 +305,14 @@ button {
 	background: var(--accent-color);
 	color: var(--staple-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	transition: color var(--transition-duration) ,var(--transition-function),color  var(--transition-duration) ,var(--transition-function);
+	transition-duration:var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 .but-regist:hover,
 .but-regist:focus {
 	background-color:var(--hover-assent-color);
-	animation:backround-color var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 	
 }
 /* =====================MODAL BUTTON============= */
@@ -318,7 +326,8 @@ button {
 	background-color:rgba(0, 0, 0, 0.2);
 	opacity: 1;
 	visibility:visible;
-	transition: var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 
 .backdrop.is-hidden {
@@ -351,24 +360,28 @@ button {
 	background-color: transparent;
 	border: 1px solid  rgba(0, 0, 0, 0.1);
 	padding: 0;
-	transition:border var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
 	border-color: var(--accent-color);
-	animation:border-color var(--animation-duration),var(--animation-timing-function);
+	animation-duration:var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 }
 
 .modal-close-btn-icon {
-	transition: fill var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
 	fill: var(--accent-color);
-	animation:fill var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 
 }
 
@@ -531,7 +544,8 @@ button {
 	border-radius: 50%;
 	background-color: var(--staple-color);
 	color: var(--extra-color);
-	transition:color var(--transition-duration),var(--transition-function),background-color var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 .social-list-icon{
 	fill:currentColor;
@@ -541,7 +555,8 @@ button {
 .social-list-link:focus{
 	background-color: var(--accent-color);
 	color:var(--staple-color);
-	animation:color var(--animation-duration),var(--animation-timing-function),background-color var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 
   }
 /* ============OUR CLIENTS======= */
@@ -559,7 +574,8 @@ button {
 	border: 1px solid var(--extra-color);
 	border-radius: 4px;
 	color:var(--extra-color);
-	transition:color var(--transition-duration),var(--transition-function),border var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 	
 }
 .companies-icons{
@@ -570,7 +586,8 @@ button {
 .companies-link:focus{
 	border:1px solid var(--accent-color);
 	color:var(--accent-color);
-	animation:color var(--animation-duration),var(--animation-timing-function),border var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 }
 
 
@@ -603,15 +620,18 @@ button {
 	border-radius: 4px;
 	cursor: pointer;
 
-	transition:color var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
+	
 }
 .gallery-navigation:hover,
 .gallery-navigation:focus {
 	background-color: var(--accent-color);
 	color: var(--staple-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),1px 4px 6px rgba(0, 0, 0, 0.16);
-	animation:box-shadow var(--animation-duration),var(--animation-timing-function),color  var(--animation-duration),var(--animation-timing-function),background-color var(--animation-duration),var(--animation-timing-function);
-
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
+	animation-direction:reverse;
 	
 }
 
@@ -633,7 +653,8 @@ button {
 	height:100%;
 	overflow-y: scroll;
 	transform:translate(0,100%);
-	transition: color var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 	
 
 	font-family:var(--main-type);
@@ -653,10 +674,11 @@ button {
 .gallery-link:hover .overlay,
 .gallery-link:focus .overlay{
 	transform: translate(0,0);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 	
-
-
 }
+
 .gallery-cover{
 	padding:28px 24px;
 	border:1px solid var(--odd-color);
@@ -674,7 +696,9 @@ button {
 .gallery-link:hover,
 .gallery-link:focus{
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),1px 4px 6px rgba(0, 0, 0, 0.16);
-	animation:box-shadow var(--animation-duration), var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
+
 
 }
 
@@ -726,24 +750,27 @@ button {
 	font-weight: var(--secondary-font-weight);
 	line-height: 1.71;
 	color: var(--staple-color);
-	transition:color var(--transition-duration),var(--transition-function);
+	transition:var(--transition-duration),var(--transition-function);
 }
 .contact-map:hover,
 .contact-map:focus {
 	color: var(--accent-color);
-	animation:color var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 	
 }
 .address {
 	font-style: normal;
 	line-height: 1.71;
-	transition:color var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 
 .address:hover,
 .address:focus {
 	color: var(--accent-color);
-	animation:color var(--animation-duration),var(--animation-timing-function);
+	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 
 }
 .footer-items{
@@ -780,12 +807,14 @@ button {
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 	fill:var(--staple-color);
-	transition:fill var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 .footer-list-link:hover,
 .footer-list-link:focus{
 	background-color: var(--accent-color);
-	animation:background-color var(--animation-duration),var(--animation-timing-function);
+	animation-duration:var(--animation-duration);
+	animation-timing-function: var(--animation-timing-function);
 
 }
 
