@@ -243,7 +243,7 @@ button {
 	display: block;
 	content: '';
 	left: 0;
-	bottom:0;
+	bottom:-1px;
 	width: 100%;
 	height: 4px;
 	border-radius: 2px;
@@ -750,7 +750,8 @@ button {
 	font-weight: var(--secondary-font-weight);
 	line-height: 1.71;
 	color: var(--staple-color);
-	transition:var(--transition-duration),var(--transition-function);
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-function);
 }
 .contact-map:hover,
 .contact-map:focus {
@@ -780,7 +781,7 @@ button {
 	font-weight: var(--extra-font-weight);
 	font-size: var(--main-size);
 	line-height: 1.14;
-	letter-spacing:var(--main-letter-spacing);
+	letter-spacing: var(--main-letter-spacing);
 	text-transform: uppercase;
 	color: var(--staple-color);
 }
@@ -813,7 +814,7 @@ button {
 .footer-list-link:hover,
 .footer-list-link:focus{
 	background-color: var(--accent-color);
-	animation-duration:var(--animation-duration);
+	animation-duration: var(--animation-duration);
 	animation-timing-function: var(--animation-timing-function);
 
 }
