@@ -28,9 +28,6 @@
 	--second-type: "Raleway", sans-serif;
 	--transition-duration:250ms;
 	--transition-function: cubic-bezier(0.4, 0, 0.2, 1);
-	--animation-duration:2500ms;
-	--animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 html{
@@ -95,7 +92,7 @@ body {
 	color: var(--second-color);
 	font-size: var(--main-size);
 	letter-spacing: var(--main-letter-spacing);
-    line-height:var(--main-line-height);
+	line-height:var(--main-line-height);
 }
 
 button {
@@ -158,10 +155,9 @@ button {
 	line-height: var(--main-line-height);
 	letter-spacing: 0.02em;
 	color: var(--plus-color);
-
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
-
 
 }
 
@@ -170,30 +166,29 @@ button {
 .contact-phone:hover,
 .contact-phone:focus {
 	color: var(--accent-color);
-	animation-timing-function: var(--animation-timing-function);
-	animation-duration: var(--animation-duration);
+	
 }
 
 .smartphone,
 .envelope{
-	fill:currentColor;
-	transition-duration: var(--transition-duration);
-	transition-timing-function: var(--transition-function);
+
+	fill: currentColor;
+
 }
+
 .envelope:hover,
 .envelope:focus,
 .smartphone:hover,
 .smartphone:focus{
+
 	fill:currentColor;
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 }
 
-
 .navigation{
+
 	display: flex;
 	align-items: center;
-	
 }
 .menu{
 	display: flex;
@@ -210,6 +205,7 @@ button {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
+
 	
 } 
  .contacts-source:not(:last-child){
@@ -225,16 +221,17 @@ button {
 	line-height: var(--main-line-height);
 	letter-spacing: 0.02em;
 	color: var(--second-color);
-	transition-duration:  var(--transition-duration);
+	transition-property: color;
+	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
+	
 
 }
 
 .menu-link:hover,
 .menu-link:focus {
 	color: var(--accent-color);
-	animation-duration:  var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 	
 }
 .curent::after{
@@ -305,14 +302,15 @@ button {
 	background: var(--accent-color);
 	color: var(--staple-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	transition-duration:var(--transition-duration);
+	transition-property:color;
+	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
+
 }
 .but-regist:hover,
 .but-regist:focus {
 	background-color:var(--hover-assent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 	
 }
 /* =====================MODAL BUTTON============= */
@@ -326,10 +324,11 @@ button {
 	background-color:rgba(0, 0, 0, 0.2);
 	opacity: 1;
 	visibility:visible;
+	transition-property: opaciry,visibility;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
-}
 
+}
 .backdrop.is-hidden {
 	opacity: 0;
 	visibility: hidden;
@@ -344,6 +343,7 @@ button {
 	width: 528px;
 	height: 580px;
 	background:var(--staple-color);
+	
 }
 
 .modal-close-btn {
@@ -358,8 +358,10 @@ button {
 	height: 30px;
 	border-radius: 50%;
 	background-color: transparent;
-	border: 1px solid  rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0;
+	color:var(--second-color);
+	transition-property: color, border-color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 
@@ -367,21 +369,20 @@ button {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
+	color: var(--accent-color);
 	border-color: var(--accent-color);
-	animation-duration:var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 }
 
 .modal-close-btn-icon {
-	transition-duration: var(--transition-duration);
-	transition-timing-function: var(--transition-function);
+	fill:currentColor;
+	
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
-	fill: var(--accent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+	fill:var(--accent-color);
+
 
 }
 
@@ -544,6 +545,7 @@ button {
 	border-radius: 50%;
 	background-color: var(--staple-color);
 	color: var(--extra-color);
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 }
@@ -555,8 +557,7 @@ button {
 .social-list-link:focus{
 	background-color: var(--accent-color);
 	color:var(--staple-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 
   }
 /* ============OUR CLIENTS======= */
@@ -574,20 +575,21 @@ button {
 	border: 1px solid var(--extra-color);
 	border-radius: 4px;
 	color:var(--extra-color);
+	transition-property: color,border;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
+
 	
 }
 .companies-icons{
 	fill:currentColor;
-
+	
 }
 .companies-link:hover,
 .companies-link:focus{
 	border:1px solid var(--accent-color);
 	color:var(--accent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+
 }
 
 
@@ -619,7 +621,7 @@ button {
 	border:none;
 	border-radius: 4px;
 	cursor: pointer;
-
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 	
@@ -629,9 +631,6 @@ button {
 	background-color: var(--accent-color);
 	color: var(--staple-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),1px 4px 6px rgba(0, 0, 0, 0.16);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
-	animation-direction:reverse;
 	
 }
 
@@ -653,6 +652,7 @@ button {
 	height:100%;
 	overflow-y: scroll;
 	transform:translate(0,100%);
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 	
@@ -674,8 +674,6 @@ button {
 .gallery-link:hover .overlay,
 .gallery-link:focus .overlay{
 	transform: translate(0,0);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
 	
 }
 
@@ -686,8 +684,6 @@ button {
 }
 .gallery-link{
 	display:block;
-	transition-duration:var(--transition-duration);
-	transition-timing-function: var(--transition-function);
 }
 .gallery-photos-overlay{
 	position: relative;
@@ -696,10 +692,6 @@ button {
 .gallery-link:hover,
 .gallery-link:focus{
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),1px 4px 6px rgba(0, 0, 0, 0.16);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
-
-
 }
 
 .gallery-suptitle {
@@ -750,19 +742,20 @@ button {
 	font-weight: var(--secondary-font-weight);
 	line-height: 1.71;
 	color: var(--staple-color);
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 }
 .contact-map:hover,
 .contact-map:focus {
 	color: var(--accent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+	
 	
 }
 .address {
 	font-style: normal;
 	line-height: 1.71;
+	transition-property: color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 }
@@ -770,8 +763,7 @@ button {
 .address:hover,
 .address:focus {
 	color: var(--accent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+	
 
 }
 .footer-items{
@@ -808,14 +800,14 @@ button {
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 	fill:var(--staple-color);
+	transition-property: fill;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-function);
 }
 .footer-list-link:hover,
 .footer-list-link:focus{
 	background-color: var(--accent-color);
-	animation-duration: var(--animation-duration);
-	animation-timing-function: var(--animation-timing-function);
+	
 
 }
 
